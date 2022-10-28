@@ -171,6 +171,19 @@ img {
  
 }
 
+.icon-envelope {
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+  
+}
+
+.icon-tel{
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+}
+
 .section{
  padding-top: 94px;
  padding-bottom: 94px;
@@ -293,6 +306,7 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 
 }
 .team {
@@ -346,17 +360,35 @@ height: 368px;
 .team-soc-item{
  width: calc((100% - 90px) / 4);
  height: 44px;
+ 
 }
 
 .team-soc-link{
  width: 100%;
  height: 100%;
- border: 1px solid tomato;
  display: flex;
  border-radius: 50%;
  align-items: center;
  justify-content: center;
- fill: #FFFFFF;
+}
+
+.team-soc-link:hover {
+ background-color: #2196F3;
+}
+.team-soc-link:hover .team-soc-icon{
+ fill:#FFFFFF;  
+}
+
+.team-soc-link:focus {
+  background-color: #2196F3;
+}
+
+.team-soc-link:focus .team-soc-icon {
+  fill: #FFFFFF;
+}
+
+.team-soc-icon{
+  fill:#AFB1B8;
 }
 
 .clients-list{
@@ -372,12 +404,32 @@ height: 368px;
 .clients-link{
  width: 100%;
  height: 100%;
- border: 1px solid tomato;
- border-radius: 5px;
+ border: 1px solid #AFB1B8;
+ border-radius: 4px;
  display: flex;
  align-items: center;
  justify-content: center;
 
+}
+
+.clients-link:hover {
+  border-color: #2196F3;
+}
+
+.clients-link:hover .clients-icon {
+  fill:#2196F3;
+}
+
+.clients-link:focus {
+  border-color: #2196F3;
+}
+
+.clients-link:focus .clients-soc-icon {
+  fill:#2196F3;
+}
+
+.clients-icon{
+  fill:#AFB1B8;
 }
 
 .logo-footer-web {
@@ -461,7 +513,6 @@ height: 368px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 50px;
 }
 
 .project-item{
